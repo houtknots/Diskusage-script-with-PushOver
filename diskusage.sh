@@ -4,7 +4,7 @@ freespace="`df -h --output=avail /dev/sda1 | tail -n1`"
 percentage="`df /dev/sda1 | awk '{ print $5 }' | tail -n 1`"
 
 TITLE="Disk Usage - $HOSTNAME"
-MESSAGE="Disk usage ${percentage//%} procent, there is$freespace left"
+MESSAGE="Disk usage ${percentage//%} percent, there is$freespace left"
 
 APP_TOKEN="<PUSHOVER APP TOKEN>"
 USER_TOKEN="<PUSHOVER USER TOKEN>"
